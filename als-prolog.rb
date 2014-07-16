@@ -10,17 +10,18 @@ class AlsProlog < Formula
     ENV.deparallelize
     ENV.O0
 
-    cd "core/unix/darwin" do
+    cd "unix" do
 
-      system "make alspro"
+      system "make standard"
+      system "tar xzf als-prolog-darwin.tgz -C #{prefix}"
 
-      bin.install "alspro"
-
-      # Install the alsdir via cp in order to deref symlinks
-      system "cp", "-RL", "alsdir", bin/"alsdir"
-
-      # Adjust OBP times by 61 seconds, so alspro doesn't try to regen
-      system "touch -A 000101 #{bin}/alsdir/builtins/*.obp"
+      bin.install_symlink prefix/"als-prolog/alspro"
+      bin.install_symlink prefix/"als-prolog/alsdev"
+      lib.install_symlink prefix/"als-prolog/libalspro.dylib"
+      lib.install_symlink prefix/"als-prolog/libalspro.a"
+      include.install_symlink prefix/"als-prolog/ALS_Prolog_Foreign_SDK/include/alspi.h"
+      include.install_symlink prefix/"als-prolog/ALS_Prolog_Foreign_SDK/include/alspi_slib.h"
+      doc.install_symlink prefix/"als-prolog/als-prolog-manual.pdf"
 
       ohai "\033[7m#{Tty.blue}⊢#{Tty.reset}#{Tty.white} #{Tty.em}ALS Prolog: Infer Different!"
 	end
