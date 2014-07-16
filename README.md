@@ -13,11 +13,11 @@ Thus the `--HEAD` argument is always required.
 
 `brew install --HEAD als-prolog`
 
-To upgrade to the latest formula and SVN commit, first update, then upgrade:
+To upgrade to the latest formula and SVN commit, first update, then reinstall:
 
 ```
 brew update
-brew upgrade als-prolog
+brew reinstall --HEAD als-prolog
 ```
 
 ## Using ALS Prolog
