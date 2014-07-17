@@ -17,7 +17,7 @@ To upgrade to the latest formula and SVN commit, first update, then reinstall:
 
 ```
 brew update
-brew reinstall --HEAD als-prolog
+brew reinstall als-prolog
 ```
 
 ## Using ALS Prolog
