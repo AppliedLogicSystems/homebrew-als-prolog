@@ -4,7 +4,7 @@
 
 To allow Homebrew to access the formula, it must be told to 'tap' into the repository:
 
-`brew tap chuckhoupt/als-prolog`
+`brew tap AppliedLogicSystems/als-prolog`
 
 ## Install & Upgrading
 
