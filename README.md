@@ -36,4 +36,4 @@ You can open the manual with:
 
 `brew uninstall als-prolog`
 
-`brew untap chuckhoupt/als-prolog`
+`brew untap AppliedLogicSystems/als-prolog`
