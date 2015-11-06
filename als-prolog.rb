@@ -2,7 +2,7 @@ require "formula"
 
 class AlsProlog < Formula
   homepage "http://alsprolog.com"
-  head "http://dev.alsprolog.com/als_prolog/trunk", :using => :svn
+  head "https://github.com/AppliedLogicSystems/ALSProlog", :using => :git
 
   def install
 
