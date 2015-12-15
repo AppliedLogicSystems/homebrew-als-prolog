@@ -8,12 +8,12 @@ To allow Homebrew to access the formula, it must be told to 'tap' into the repos
 
 ## Install & Upgrading
 
-The formula is currently setup as a HEAD formula, so it always builds from the leading edge of the SVN trunk.
+The formula is currently setup as a HEAD formula, so it always builds from the leading edge of the Git repo.
 Thus the `--HEAD` argument is always required.
 
 `brew install --HEAD als-prolog`
 
-To upgrade to the latest formula and SVN commit, first update, then reinstall:
+To upgrade to the latest formula and Git commit, first update, then reinstall:
 
 ```
 brew update
