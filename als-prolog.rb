@@ -21,7 +21,7 @@ class AlsProlog < Formula
       lib.install_symlink prefix/"als-prolog/libalspro.a"
       include.install_symlink prefix/"als-prolog/ALS_Prolog_Foreign_SDK/include/alspi.h"
       include.install_symlink prefix/"als-prolog/ALS_Prolog_Foreign_SDK/include/alspi_slib.h"
-      doc.install_symlink prefix/"als-prolog/als-prolog-manual.pdf"
+      doc.install prefix/"als-prolog/als-prolog-manual.pdf"
 
       ohai "\033[7m#{Tty.blue}⊢#{Tty.reset}#{Tty.white} #{Tty.em}ALS Prolog: Infer Different!"
 	end
