@@ -1,4 +1,6 @@
-# ALS-Prolog Homebrew Formula
+# ALS-Prolog Homebrew/Linuxbrew Formula
+
+A formula for installing [ALS Prolog](http://alsprolog.com) with the [Homebew](http://brew.sh) or [Linuxbrew](https://github.com/Linuxbrew/linuxbrew) sudo-less package managers.
 
 ## Setup
 
