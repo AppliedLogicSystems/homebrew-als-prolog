@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require "formula"
 
 class AlsProlog < Formula
@@ -11,9 +12,10 @@ class AlsProlog < Formula
     ENV.O0
 
     cd "unix" do
+      platform = `uname`.strip.downcase
 
       system "make standard"
-      system "tar xzf als-prolog-darwin.tgz -C #{prefix}"
+      system "tar xzf als-prolog-#{platform}.tgz -C #{prefix}"
 
       bin.install_symlink prefix/"als-prolog/alspro"
       bin.install_symlink prefix/"als-prolog/alsdev"
