@@ -26,6 +26,6 @@ class AlsProlog < Formula
       doc.install prefix/"als-prolog/als-prolog-manual.pdf"
 
       ohai "\033[7m#{Tty.blue}⊢#{Tty.reset}#{Tty.white} #{Tty.em}ALS Prolog: Infer Different!"
-	end
+    end
   end
 end
