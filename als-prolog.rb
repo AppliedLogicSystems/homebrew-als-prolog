@@ -11,6 +11,11 @@ class AlsProlog < Formula
     ENV.deparallelize
     ENV.O0
 
+    # Remove Hombrew header/lib paths to avoid interference from /usr/local headers
+    # and libs, in particular 3rd party Tcl/Tk headers.
+	ENV.delete("HOMEBREW_ISYSTEM_PATHS")
+	ENV.delete("HOMEBREW_LIBRARY_PATHS")
+
     cd "unix" do
       platform = `uname`.strip.downcase
 
