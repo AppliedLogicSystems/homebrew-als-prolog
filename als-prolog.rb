@@ -1,26 +1,26 @@
 # -*- coding: utf-8 -*-
-require "formula"
 
 class AlsProlog < Formula
+  desc "ALS Prolog Compiler & Development Environment"
   homepage "http://alsprolog.com"
-  head "https://github.com/AppliedLogicSystems/ALSProlog", :using => :git
+  url "https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.2.0.tar.gz"
+  sha256 "d928305053651c543c571f00067e15b52ebc41a36b74dd666fee9aa64a7ae41b"
 
   def install
-
     ENV.m32
     ENV.deparallelize
     ENV.O0
 
     # Remove Hombrew header/lib paths to avoid interference from /usr/local headers
     # and libs, in particular 3rd party Tcl/Tk headers.
-	ENV.delete("HOMEBREW_ISYSTEM_PATHS")
-	ENV.delete("HOMEBREW_LIBRARY_PATHS")
+    ENV.delete("HOMEBREW_ISYSTEM_PATHS")
+    ENV.delete("HOMEBREW_LIBRARY_PATHS")
 
     cd "unix" do
       platform = `uname`.strip.downcase
 
-      system "make standard"
-      system "tar xzf als-prolog-#{platform}.tgz -C #{prefix}"
+      system "make", "standard"
+      system "tar", "xzf", "als-prolog-#{platform}.tgz", "-C", prefix
 
       bin.install_symlink prefix/"als-prolog/alspro"
       bin.install_symlink prefix/"als-prolog/alsdev"
@@ -41,5 +41,9 @@ class AlsProlog < Formula
 
       ohai "\033[7m#{Tty.blue}⊢#{Tty.reset}#{Tty.white} #{Tty.em}ALS Prolog: Infer Different!"
     end
+  end
+
+  test do
+    system "#{bin}/alspro", "--help"
   end
 end

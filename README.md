@@ -1,14 +1,13 @@
 # ALS-Prolog Homebrew/Linuxbrew Formula
 
-A formula for installing [ALS Prolog](http://alsprolog.com) with the [Homebew](http://brew.sh) or [Linuxbrew](https://github.com/Linuxbrew/linuxbrew) sudo-less package managers.
+A formula for installing [ALS Prolog](http://alsprolog.com) with the [Homebew](http://brew.sh)
+or [Linuxbrew](https://github.com/Linuxbrew/linuxbrew) sudo-less package managers.
 
 ## Install
 
 To tap and install:
 
-`brew install --HEAD AppliedLogicSystems/als-prolog/als-prolog`
-
-The `--HEAD` is required because the formula is currently setup as a HEAD formula, so it always builds from the leading edge of the Git repo.
+`brew install AppliedLogicSystems/als-prolog/als-prolog`
 
 ## Using ALS Prolog
 
@@ -22,13 +21,13 @@ You can open the manual with:
 
 `open /usr/local/share/doc/als-prolog/als-prolog-manual.pdf`
 
-## Updating
+## Upgrading
 
-To upgrade to the latest formula and Git commit, first update, then reinstall:
+To upgrade to the latest formula, first update, then upgrade:
 
 ```
 brew update
-brew reinstall als-prolog
+brew upgrade als-prolog
 ```
 
 ## Un-installing & Un-Tapping
