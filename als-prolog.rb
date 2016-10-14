@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+# To Update:
+# Adjust URL to point at new tarball
+# Recalculate tarball SHA256 with: shasum -a 256 vX.Y.Z.tar.gz
+
 class AlsProlog < Formula
   desc "ALS Prolog Compiler & Development Environment"
   homepage "http://alsprolog.com"
