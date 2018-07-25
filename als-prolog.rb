@@ -4,13 +4,13 @@
 # Adjust URL to point at new tarball
 # Recalculate tarball SHA256 with: shasum -a 256 vX.Y.Z.tar.gz
 # E.g., can use:
-# curl https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.4.0.tar.gz | shasum -a 256
+# curl -L https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.4.0.tar.gz | shasum -a 256
 
 class AlsProlog < Formula
   desc "ALS Prolog Compiler & Development Environment"
   homepage "http://alsprolog.com"
   url "https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.4.0.tar.gz"
-  sha256 "d55bbef2989dd5b4cf6fe9dfaf6d6266d3b49a5feca58c2a61653dbeeeb8bf10"
+  sha256 "17a2b4e2c96e03e9de48e919109628bef717011d051c6dbce3ad96fb15f7fec3"
 
   def install
     ENV.m32
