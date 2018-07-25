@@ -3,6 +3,8 @@
 # To Update:
 # Adjust URL to point at new tarball
 # Recalculate tarball SHA256 with: shasum -a 256 vX.Y.Z.tar.gz
+# E.g., can use:
+# curl https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.4.0.tar.gz | shasum -a 256
 
 class AlsProlog < Formula
   desc "ALS Prolog Compiler & Development Environment"
