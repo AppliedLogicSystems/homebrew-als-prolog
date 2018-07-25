@@ -45,7 +45,7 @@ class AlsProlog < Formula
       doc.install prefix/"als-prolog/package_nav.html"
       doc.install prefix/"als-prolog/examples"
 
-      ohai "\033[7m#{Tty.blue}⊢#{Tty.reset}#{Tty.white} #{Tty.underline}ALS Prolog: Infer Different!#{Tty.reset}"
+      ohai "\033[7m#{Tty.blue}⊢#{Tty.reset} #{Tty.underline}ALS Prolog: Infer Different!#{Tty.reset}"
     end
   end
 
