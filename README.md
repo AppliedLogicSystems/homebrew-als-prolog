@@ -23,10 +23,9 @@ You can open the manual with:
 
 ## Upgrading
 
-To upgrade to the latest formula, first update, then upgrade:
+To upgrade to the latest formula:
 
 ```
-brew update
 brew upgrade als-prolog
 ```
 
