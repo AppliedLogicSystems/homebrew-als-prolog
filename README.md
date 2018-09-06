@@ -5,7 +5,7 @@ or [Linuxbrew](https://github.com/Linuxbrew/linuxbrew) sudo-less package manager
 
 ## Install
 
-To tap and install:
+To tap and install the latest release:
 
 `brew install AppliedLogicSystems/als-prolog/als-prolog`
 
@@ -34,3 +34,9 @@ brew upgrade als-prolog
 `brew uninstall als-prolog`
 
 `brew untap AppliedLogicSystems/als-prolog`
+
+## Advanced Development
+
+To install the latest unstable version from the master branch:
+
+`brew install --HEAD als-prolog`
