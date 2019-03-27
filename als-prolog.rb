@@ -10,8 +10,8 @@ class AlsProlog < Formula
   desc "ALS Prolog Compiler & Development Environment"
   homepage "http://alsprolog.com"
   head "https://github.com/AppliedLogicSystems/ALSProlog.git"
-  url "https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.4.1.tar.gz"
-  sha256 "0d6ee44574df170a20fdcb0c067aeb1288618dbde27bdfc0761fa23a95b63ab4"
+  url "https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.5.0.tar.gz"
+  sha256 "aef62d7bb820d89caff52298ed21db74b5e20542853f166a7a237a1e711fcc6c"
 
   def install
     ENV.m32
