@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-# To Update:
-# Adjust URL to point at new tarball
-# Recalculate tarball SHA256 with: shasum -a 256 vX.Y.Z.tar.gz
-# E.g., can use:
-# curl -L https://github.com/AppliedLogicSystems/ALSProlog/archive/v3.4.1.tar.gz | shasum -a 256
+# Note: This experimental formula conficts with default formula,
+#       so be sure to uninstall and untap als-prolog formula before installing.
+
+# Install with:
+#     brew install -v --HEAD AppliedLogicSystems/als-prolog/als-prolog-64
 
 class AlsProlog64 < Formula
   desc "ALS Prolog Compiler & Development Environment"
