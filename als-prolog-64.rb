@@ -9,7 +9,7 @@
 class AlsProlog64 < Formula
   desc "ALS Prolog Compiler & Development Environment"
   homepage "https://alsprolog.com"
-  head "https://github.com/AppliedLogicSystems/ALSProlog.git", branch: "als64"
+  head "https://github.com/AppliedLogicSystems/ALSProlog.git", branch: "master"
 
   def install
 
