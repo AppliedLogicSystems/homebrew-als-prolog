@@ -1,0 +1,13 @@
+name: Forumla install test
+on:
+  push:
+  schedule:
+    - cron: '11 11 11 * *'
+
+jobs:
+  MacOS:
+    runs-on: macos-latest
+    steps:
+     - uses: actions/checkout@v3
+     - run: brew install -v --HEAD AppliedLogicSystems/als-prolog/als-prolog-64
+     - run: alspro -b -g true
