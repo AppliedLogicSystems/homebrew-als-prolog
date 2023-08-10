@@ -1,3 +1,5 @@
+[![Forumla install test](https://github.com/AppliedLogicSystems/homebrew-als-prolog/actions/workflows/ci.yml/badge.svg)](https://github.com/AppliedLogicSystems/homebrew-als-prolog/actions/workflows/ci.yml)
+
 # ALS-Prolog Homebrew/Linuxbrew Formula
 
 A formula for installing [ALS Prolog](http://alsprolog.com) with the [Homebew](http://brew.sh)
