@@ -11,6 +11,8 @@ class AlsProlog64 < Formula
   homepage "https://alsprolog.com"
   head "https://github.com/AppliedLogicSystems/ALSProlog.git", branch: "master"
 
+  depends_on "ruby"
+
   def install
 
     # Remove Hombrew header/lib paths to avoid interference from /usr/local headers
