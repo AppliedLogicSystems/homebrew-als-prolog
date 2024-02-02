@@ -25,7 +25,7 @@ class AlsProlog64 < Formula
     cd "unix" do
       platform = `uname`.strip.downcase
 
-      system "make", "standard"
+      system "make", "standard-nodoc"
       system "tar", "xzf", "als-prolog-#{platform}.tgz", "-C", prefix
 
       bin.install_symlink prefix/"als-prolog/alspro"
@@ -39,7 +39,7 @@ class AlsProlog64 < Formula
       doc.install prefix/"als-prolog/README.txt"
       doc.install prefix/"als-prolog/als-prolog-manual.pdf"
       doc.install prefix/"als-prolog/als-ref-manual.pdf"
-      doc.install prefix/"als-prolog/docs"
+#      doc.install prefix/"als-prolog/docs"
       doc.install prefix/"als-prolog/examples"
 
       ohai "\033[7m#{Tty.blue}⊢#{Tty.reset} #{Tty.underline}ALS Prolog: Infer Different!#{Tty.reset}"
